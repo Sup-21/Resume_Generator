@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Resume Generator | Input Form</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo-pdf-generator" class="nav__logo">
+            </a>
+            <li><a href="index.html"> Home </a></li>
+        </ul>
+    </nav>
+    <main style="margin-top:100px">
+        <!-- Introduction -->
+        <div id="intro">
+            <h1>Personal Details</h1>
+            <input id="name" type="text" placeholder="Name">
+            <input id="professionalTitle" type="text" placeholder="Professional Title">
+            <p class="label__txt">Upload a profile image</p>
+            <input type="file" name="file" id="file">
+            <textarea name="description" id="description" cols="50" rows="5" placeholder="Description"></textarea>
+            <input type="email" name="email" id="email" placeholder="Email ID">
+            <textarea name="location" id="location" cols="30" rows="2" placeholder="Location"></textarea>
+            <input type="tel" name="contactNo" id="contactNo" placeholder="Contact Number">
+
+        </div>
+
+        <!-- Work Experience Section -->
+        <h1>Work Experience</h1>
+        <div action="" class="work__exp">
+            <input id="position" type="text" class="text__inp" placeholder="Title / Position">
+            <input id="company" type="text" class="text__inp" placeholder="Workforce / Company">
+            <br>
+            <label class="label__txt" for="workStartDate">Start Date</label>
+            <input id="workStartDate" type="month">
+
+            <label class="label__txt" for="workEndDate">End Date</label>
+            <input id="workEndDate" type="month">
+            <br>
+            <!-- Education details Section -->
+            <h1>Education Details</h1>
+            <input id="degree" type="text" class="text__inp" placeholder="Degree name">
+            <input id="institution" type="text" class="text__inp" placeholder="School/college name">
+            <br>
+            <!-- <input id="Degree" type="text" class="text__inp" placeholder="Degree name">
+            <input id="Instituion" type="text" class="text__inp" placeholder="School/college name">
+            <br> -->
+            <label class="label__txt" for="edStartDate">Start Date</label>
+            <input id="edStartDate" type="month">
+
+            <label class="label__txt" for="edEndDate">End Date</label>
+            <input id="edEndDate" type="month">
+
+            <input id="GPA" class="label__txt" placeholder="Enter GPA b/w 0 and 10">
+            <br>
+
+
+            <!-- Skills  -->
+            <h1>Skills</h1>
+            <div id="skills_form" class="text-area">
+                <p class="label__txt">Enter your skills</p>
+                <p><textarea name="Enter Skills" class="input-area" id="user_skills_input" cols="40" rows="10" required
+                        placeholder="Seperate Each skill with a space ' ' "></textarea></p>
+            </div>
+
+            <!-- Interests -->
+            <div id="interestSection">
+
+                <h1>Interests</h1>
+                <p class="label__txt">Enter your interests</p>
+                <p> <textarea name="Interests" id="user_interests_input" class="input-area" cols="40" rows="10" required
+                        placeholder="Seperate Each interest with a space ' ' "></textarea> </p>
+            </div>
+
+            <!-- Theme Selection -->
+            <label class="label__txt" for="startDate">Select Theme Color </label>
+
+            <select name="color" id="color">
+                <option value="Yellow">Yellow</option>
+                <option value="Blue" selected>Blue</option>
+                <option value="Green">Green</option>
+            </select>
+
+            <a href="thanks.html">
+                <input type="button" id="submitBtn" class="generate-btn" value="Generate PDF"
+                    onclick="generateResume()">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="quickLinks">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Generate Resume</a></li>
+                <li><a href="contact.html">Contact Us</a> </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
